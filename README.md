@@ -146,7 +146,7 @@ If you use this code in your research, please cite:
 
 ## Paper
 
-**Link:** [IEEE Xplore](link-after-acceptance) | [arXiv](link) | [GitHub](https://github.com/NahlaSkaik/Federated-PdM-IIoT)
+**Link:** [IEEE Xplore](link-after-acceptance) | [arXiv](link) | [GitHub](https://github.com/Nahla-Nabil/Federated-PdM-IIoT.git)
 
 ## Contributing
 
