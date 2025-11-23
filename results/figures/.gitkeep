@@ -1,1 +1,3 @@
-
+touch results/figures/.gitkeep
+   touch results/metrics/.gitkeep
+   touch results/models/.gitkeep
