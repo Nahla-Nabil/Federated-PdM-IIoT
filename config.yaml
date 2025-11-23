@@ -1,23 +1,128 @@
-# Federated Learning Configuration
-federated:
-  n_clients: 4
-  dirichlet_alpha: 0.5
-  local_estimators: 80
-  local_max_depth: 10
+# ========================================
+# Federated PdM IIoT Configuration
+# Paper: Hybrid Edge-Cloud Federated Learning
+# Author: Nahla Nabil Skaik
+# ========================================
 
-# Centralized Baseline
-centralized:
-  n_estimators: 150
-  max_depth: 12
-  
-# Dataset
+# Dataset Configuration
 dataset:
   n_samples: 2300
   n_classes: 10
+  samples_per_class: 230
   test_size: 0.25
   random_state: 42
+  stratify: true
+  
+  # Feature types
+  features:
+    time_domain: ['max', 'min', 'mean', 'rms', 'std']
+    shape: ['crest_factor', 'form_factor', 'peak_to_peak']
+    distribution: ['kurtosis', 'skewness']
 
-# Scalability Test
+# Preprocessing
+preprocessing:
+  handle_missing: 'median'  # Options: median, mean, drop
+  normalization: 'standard'  # Options: standard, minmax, robust
+  
+# Centralized Model Configuration
+centralized:
+  algorithm: 'random_forest'
+  n_estimators: 150
+  max_depth: 12
+  min_samples_split: 2
+  random_state: 42
+  n_jobs: -1
+
+# Federated Learning Configuration
+federated:
+  n_clients: 4
+  communication_rounds: 1
+  
+  # Non-IID Data Distribution
+  data_distribution:
+    type: 'dirichlet'
+    alpha: 0.5  # Lower = more heterogeneous
+  
+  # Local Model (Edge Clients)
+  local_model:
+    algorithm: 'random_forest'
+    n_estimators: 80
+    max_depth: 10
+    min_samples_split: 2
+    random_state: 42
+  
+  # Aggregation Strategy
+  aggregation:
+    method: 'fedavg'  # Federated Averaging
+    weighted: true    # Weight by client sample size
+
+# Algorithm Comparison
+algorithms:
+  - name: 'random_forest'
+    params:
+      n_estimators: 150
+      max_depth: 12
+  - name: 'gradient_boosting'
+    params:
+      n_estimators: 100
+      max_depth: 6
+      learning_rate: 0.1
+  - name: 'decision_tree'
+    params:
+      max_depth: 12
+  - name: 'svm'
+    params:
+      kernel: 'rbf'
+      C: 1.0
+
+# Scalability Analysis
 scalability:
   client_counts: [2, 4, 8, 16]
-  n_runs: 30
+  n_runs_per_config: 30
+  dirichlet_alpha: 0.5
+
+# Explainability (SHAP)
+explainability:
+  enabled: true
+  method: 'shap'
+  n_samples: 100  # Samples for SHAP background
+  top_features: 10
+
+# Statistical Validation
+statistics:
+  paired_ttest: true
+  anova: true
+  significance_level: 0.05
+  n_bootstrap: 1000
+
+# Output Configuration
+output:
+  save_models: true
+  save_figures: true
+  save_metrics: true
+  figure_format: 'png'
+  figure_dpi: 300
+  
+  paths:
+    figures: 'results/figures/'
+    metrics: 'results/metrics/'
+    models: 'results/models/'
+
+# Visualization Settings
+visualization:
+  style: 'seaborn'
+  palette: 'Set2'
+  figsize: [10, 6]
+  font_size: 12
+  
+# Logging
+logging:
+  level: 'INFO'  # DEBUG, INFO, WARNING, ERROR
+  console: true
+  file: false
+  log_file: 'logs/experiment.log'
+
+# Reproducibility
+reproducibility:
+  seed: 42
+  deterministic: true
