@@ -64,21 +64,22 @@ joblib>=1.1.0
 
 ```
 Federated-PdM-IIoT/
-├── federated_pdm_complete.py   # Main implementation
-├── requirements.txt            # Python dependencies
-├── LICENSE                     # MIT License
-├── README.md                   # This file
+├── federated_pdm_complete.py     # Main implementation
+├── requirements.txt              # Dependencies
+├── LICENSE                       # MIT License
+├── README.md                     # Project documentation
 │
-├── data/                       # Dataset directory
-│   └── README.md              # Dataset documentation
+├── data/                         # Dataset directory
+│   └── README.md                 # Dataset description
 │
-├── results/                    # Experiment outputs
-│   ├── figures/               # Generated plots
-│   ├── metrics/               # Performance metrics
-│   └── models/                # Saved models
+├── results/                      # Experiment outputs
+│   ├── figures/                  # Plots
+│   ├── metrics/                  # Metrics CSV files
+│   └── models/                   # Saved models
 │
-└── docs/                      # Documentation
-    └── README.md              # Additional documentation
+└── docs/                         # Additional documentation
+    └── README.md
+
 ```
 
 ## Experiments Included
