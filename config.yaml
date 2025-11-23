@@ -1,9 +1,3 @@
-# ========================================
-# Federated PdM IIoT Configuration
-# Paper: Hybrid Edge-Cloud Federated Learning
-# Author: Nahla Nabil Skaik
-# ========================================
-
 # Dataset Configuration
 dataset:
   n_samples: 2300
