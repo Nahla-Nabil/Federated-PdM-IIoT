@@ -58,3 +58,100 @@ joblib>=1.1.0
 ```
 
 ## 📁 Repository Structure
+
+├── federated_pdm_complete.py   # Main implementation
+├── requirements.txt            # Python dependencies
+├── data/                       # Dataset directory
+├── results/                    # Experiment outputs
+│   ├── figures/               # Generated plots
+│   ├── metrics/               # Performance metrics
+│   └── models/                # Saved models
+└── docs/                      # Documentation
+
+## 🔬 Experiments Included
+
+### 1. Centralized Baseline
+```python
+# Random Forest with 150 estimators
+rf_baseline = RandomForestClassifier(n_estimators=150, max_depth=12)
+```
+
+### 2. Federated Learning
+```python
+# 4 edge clients with Non-IID Dirichlet distribution (α=0.5)
+clients_data = create_noniid_splits(X_train, y_train, n_clients=4)
+```
+
+### 3. Algorithm Comparison
+- Random Forest
+- Gradient Boosting
+- Decision Tree
+- SVM (RBF)
+
+### 4. Scalability Analysis
+- Tested: 2, 4, 8, 16 clients
+- Mean accuracy tracked across configurations
+
+### 5. SHAP Explainability
+```python
+explainer = shap.TreeExplainer(model)
+shap_values = explainer.shap_values(X_test)
+```
+
+## 📊 Generated Outputs
+
+The script generates:
+- `1_confusion_matrices.png` - Confusion matrices comparison
+- `2_roc_curves.png` - ROC curves
+- `3_feature_importance.png` - Top 10 features
+- `4_performance_comparison.png` - Metrics comparison
+- `5_scalability_analysis.png` - Scalability plot
+- `6_shap_summary.png` - SHAP summary
+- `7_shap_importance.png` - SHAP importance ranking
+- `performance_comparison.csv` - Detailed metrics
+- `federated_pdm_complete.pkl` - Saved models
+
+## 🎓 Citation
+
+If you use this code in your research, please cite:
+```bibtex
+@inproceedings{skaik2025hybrid,
+  title={Hybrid Edge--Cloud Federated Learning Framework for Predictive Maintenance in Industrial IoT},
+  author={Skaik, Nahla Nabil},
+  booktitle={IEEE Conference Proceedings},
+  year={2025},
+  organization={IEEE}
+}
+```
+
+## 📄 Paper
+
+**Link:** [arXiv](link) | [IEEE Xplore](link) (Available after acceptance)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Submit a pull request
+
+## 📧 Contact
+
+**Nahla Nabil Skaik**  
+Arab Open University - Bahrain  
+Email: nahla.nabil.52@gmail.com
+
+## 📜 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Arab Open University - Bahrain
+- CWRU Bearing Data Center
+- IEEE Conference Organizers
+
+---
+
+**⭐ Star this repo if you find it helpful!**
