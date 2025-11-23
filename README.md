@@ -158,6 +158,13 @@ Contributions are welcome! Please:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## 📖 Documentation
+   
+   - **[Installation Guide](docs/INSTALLATION.md)** - Detailed setup instructions
+   - **[Architecture](docs/ARCHITECTURE.md)** - System design and workflow
+   - **[Results](RESULTS.md)** - Complete experimental results
+   - **[Contributing](CONTRIBUTING.md)** - How to contribute
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
