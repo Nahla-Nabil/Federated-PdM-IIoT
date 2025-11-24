@@ -147,7 +147,7 @@ If you use this code in your research, please cite:
 
 ## Paper
 
-**Link:** [IEEE Xplore](link-after-acceptance) | [arXiv](link) | [GitHub](https://github.com/Nahla-Nabil/Federated-PdM-IIoT.git)
+**Link:** [IEEE Xplore](link-after-acceptance)  | [GitHub](https://github.com/Nahla-Nabil/Federated-PdM-IIoT.git)
 
 ## Contributing
 
@@ -164,7 +164,6 @@ Contributions are welcome! Please:
    - **[Installation Guide](docs/INSTALLATION.md)** - Detailed setup instructions
    - **[Architecture](docs/ARCHITECTURE.md)** - System design and workflow
    - **[Results](RESULTS.md)** - Complete experimental results
-   - **[Contributing](CONTRIBUTING.md)** - How to contribute
 
 ## License
 
@@ -176,6 +175,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Arab Open University - Bahrain  
 Email: nahla.nabil.52@gmail.com  
 GitHub: [@Nahla-Nabil](https://github.com/NahLA-Nabil)
+Linkedin: (https://www.linkedin.com/in/nahla-nabil-876597211/)
 
 ## Acknowledgments
 
