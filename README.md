@@ -178,7 +178,7 @@ Linkedin: https://www.linkedin.com/in/nahla-nabil-876597211/
 
 - Arab Open University - Bahrain for research support
 - CWRU Bearing Data Center for dataset inspiration
-- IEEE Conference Organizers
+- ICCA/IEEE Conference Organizers
 - Open-source community for excellent tools
 
 ---
