@@ -73,10 +73,7 @@ Federated-PdM-IIoT/
 │   └── README.md                 # Dataset description
 │
 ├── results/                      # Experiment outputs
-│   ├── figures/                  # Plots
-│   ├── metrics/                  # Metrics CSV files
-│   └── models/                   # Saved models
-│
+│   └── figures/                  # Plots
 └── docs/                         # Additional documentation
     └── README.md
 
