@@ -8,7 +8,7 @@
 
 ```
 
-![System Architecture](results/figures/architecture_diagram.png)
+![System Architecture](results/figures/architecture_diagram)
 
 ---
 
