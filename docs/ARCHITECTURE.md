@@ -2,16 +2,11 @@
 
 > **Hybrid Edge-Cloud Federated Learning for Predictive Maintenance**
 
----
-
 ## 📐 High-Level Overview
-
-```
-
 ![System Architecture](../results/figures/architecture_diagram.png)
 
 
-
+---
 ## 🔄 Workflow Pipeline
 
 ### Phase 1: Data Collection & Preprocessing
