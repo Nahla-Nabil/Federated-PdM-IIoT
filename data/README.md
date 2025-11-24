@@ -1,176 +1,116 @@
-
-
 # Dataset Information
 
 ## 📊 Overview
 
-This directory contains the synthetic CWRU-inspired bearing vibration dataset used in the paper:
+This directory contains the **bearing vibration dataset** used in the experiments of the paper:
 
 **"Hybrid Edge-Cloud Federated Learning Framework for Predictive Maintenance in Industrial IoT"**
 
+The dataset used in this project comes from **two sources**:
+
+1. **🔹 Real CWRU Features Dataset (from Kaggle)**  
+   Loaded automatically from:  
+   **https://www.kaggle.com/datasets/brjapon/cwru-bearing-datasets**
+
+2. **🔹 Synthetic CWRU-inspired dataset**  
+   Automatically generated inside `federated_pdm_complete.py` when no Kaggle data is found.
+
+The experiments in the paper used **the real Kaggle dataset**, not the synthetic one.
+
 ---
 
-## 🎯 Dataset Specifications
+## 🎯 Dataset Specifications (Kaggle Version)
 
 | Property | Value |
 |----------|-------|
 | **Total Samples** | 2,300 |
 | **Number of Classes** | 10 (balanced) |
 | **Samples per Class** | 230 |
-| **Features** | 10 statistical/spectral |
+| **Features** | 10 statistical/spectral features |
 | **Train/Test Split** | 75% / 25% (stratified) |
-| **Data Type** | Synthetic (CWRU-inspired) |
+| **Data Source** | Kaggle (CWRU Bearing Dataset) |
 
 ---
 
 ## 🏷️ Fault Categories
 
-The dataset includes 10 bearing fault conditions:
-
 | Class ID | Label | Description |
 |----------|-------|-------------|
-| 0 | Normal | Healthy bearing operation |
-| 1 | IR_007 | Inner Race fault (0.007" diameter) |
-| 2 | IR_014 | Inner Race fault (0.014" diameter) |
-| 3 | IR_021 | Inner Race fault (0.021" diameter) |
-| 4 | OR_007_6 | Outer Race fault (0.007", 6 o'clock) |
-| 5 | OR_014_6 | Outer Race fault (0.014", 6 o'clock) |
-| 6 | OR_021_6 | Outer Race fault (0.021", 6 o'clock) |
-| 7 | Ball_007 | Ball fault (0.007" diameter) |
-| 8 | Ball_014 | Ball fault (0.014" diameter) |
-| 9 | Ball_021 | Ball fault (0.021" diameter) |
-
-**Note**: Numbers (007, 014, 021) represent fault severity levels.
+| 0 | Normal | Healthy bearing |
+| 1 | IR_007 | Inner Race fault (0.007") |
+| 2 | IR_014 | Inner Race fault (0.014") |
+| 3 | IR_021 | Inner Race fault (0.021") |
+| 4 | OR_007_6 | Outer Race (0.007", 6 o’clock) |
+| 5 | OR_014_6 | Outer Race (0.014", 6 o’clock) |
+| 6 | OR_021_6 | Outer Race (0.021", 6 o’clock) |
+| 7 | Ball_007 | Ball fault (0.007") |
+| 8 | Ball_014 | Ball fault (0.014") |
+| 9 | Ball_021 | Ball fault (0.021") |
 
 ---
 
 ## 📈 Extracted Features
 
-### Time-Domain Features (5)
-| Feature | Symbol | Description |
-|---------|--------|-------------|
-| Maximum | max | Peak amplitude |
-| Minimum | min | Minimum amplitude |
-| Mean | μ | Average signal level |
-| RMS | RMS | Root Mean Square (energy) |
-| Standard Deviation | σ | Signal variation |
+### Time-Domain Features
+- max  
+- min  
+- mean  
+- rms  
+- sd  
 
-### Shape Features (3)
-| Feature | Formula | Description |
-|---------|---------|-------------|
-| Crest Factor | CF = Peak / RMS | Impulsiveness indicator |
-| Form Factor | FF = RMS / Mean | Waveform shape |
-| Peak-to-Peak | P2P = Max - Min | Signal range |
-
-### Distribution Features (2)
-| Feature | Symbol | Description |
-|---------|--------|-------------|
-| Kurtosis | Kurt | Distribution peakiness (fault indicator) |
-| Skewness | Skew | Distribution asymmetry |
+### Shape / Statistical Features
+- crest  
+- form  
+- peak-to-peak  
+- kurtosis  
+- skewness  
 
 ---
 
 ## 📂 File Structure
 
-```
 data/
-├── README.md                    # This file
-├── sample_features.csv          # Example data (10 samples)
-├── .gitkeep                     # Keep directory in git
-└── raw/                         # (Not included - generated synthetically)
-```
+├── README.md
+├── sample_features.csv # 10 example samples only
+└── .gitkeep # keeps folder in Git
+
+yaml
+نسخ الكود
+
+**Note:**  
+The full Kaggle dataset **is not included** in this repository due to size and licensing.  
+It is automatically loaded when running the notebook.
 
 ---
 
-## 🔄 Data Generation Process
+## 🔗 Data Sources
 
-The dataset is **synthetically generated** to ensure reproducibility:
+- **Primary Dataset (used in all experiments)**  
+  Kaggle CWRU Bearing Features Dataset  
+  https://www.kaggle.com/datasets/brjapon/cwru-bearing-datasets  
 
-1. **Feature Statistics**: Based on CWRU bearing data characteristics
-2. **Class Separation**: Sufficient inter-class variance for ML
-3. **Realistic Noise**: Added Gaussian noise to simulate real sensors
-4. **Balance**: Exactly 230 samples per class
-
-```python
-# Example generation code (simplified)
-import numpy as np
-
-def generate_fault_data(n_samples, fault_type, severity):
-    """Generate synthetic vibration features"""
-    if fault_type == 'normal':
-        rms = np.random.normal(0.5, 0.05, n_samples)
-        kurtosis = np.random.normal(3.0, 0.2, n_samples)
-    elif fault_type == 'inner_race':
-        rms = np.random.normal(1.2, 0.1, n_samples)
-        kurtosis = np.random.normal(5.5, 0.5, n_samples)
-    # ... etc
-    return features
-```
+- **Original Raw Data (CWRU)**  
+  https://engineering.case.edu/bearingdatacenter  
 
 ---
 
-## 💻 Usage Examples
+## 💻 Example: Loading the Kaggle Dataset
 
-### Load Full Dataset
 ```python
 import pandas as pd
-from sklearn.model_selection import train_test_split
 
-# Load data (generated by federated_pdm_complete.py)
-data = pd.read_csv('data/generated_dataset.csv')
-X = data.drop('label', axis=1)
-y = data['label']
+df = pd.read_csv("/kaggle/input/cwru-bearing-datasets/feature_time_48k_2048_load_1.csv")
+print(df.head())
+🔍 Data Quality Checks
+✔ Balanced classes (230 each)
+✔ No missing values
+✔ Standardized features (z-score)
+✔ Strict train/test split (no leakage)
+✔ Reproducible (random_state=42)
 
-# Split
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.25, stratify=y, random_state=42
-)
-```
+🎓 Citation
+If you use this dataset, please cite:
 
-### Create Non-IID Splits for Federated Learning
-```python
-from federated_utils import create_noniid_splits
-
-# Split into 4 clients with Dirichlet(0.5) distribution
-clients_data = create_noniid_splits(
-    X_train, y_train, 
-    n_clients=4, 
-    alpha=0.5
-)
-
-# Each client has different label distribution
-for i, (X_client, y_client) in enumerate(clients_data):
-    print(f"Client {i}: {len(y_client)} samples")
-    print(f"Label distribution: {np.bincount(y_client)}")
-```
-
----
-
-## 🔍 Data Quality Checks
-
-✅ **No missing values**  
-✅ **Balanced classes** (230 samples each)  
-✅ **Standardized features** (μ=0, σ=1 after preprocessing)  
-✅ **No data leakage** (strict train/test split)  
-✅ **Reproducible** (fixed random seed = 42)
-
----
-
-## 📊 Sample Statistics
-
-| Feature | Min | Mean | Max | Std |
-|---------|-----|------|-----|-----|
-| RMS | 0.32 | 0.98 | 2.15 | 0.45 |
-| Kurtosis | 2.51 | 4.23 | 8.97 | 1.82 |
-| Crest Factor | 1.21 | 2.85 | 5.43 | 0.91 |
-
----
-
-## 🎓 Citation
-
-If you use this dataset, please cite the paper:
-
-```bibtex
 @inproceedings{skaik2025hybrid,
   title={Hybrid Edge--Cloud Federated Learning Framework for Predictive Maintenance in Industrial IoT},
   author={Skaik, Nahla Nabil},
@@ -178,20 +118,7 @@ If you use this dataset, please cite the paper:
   year={2025},
   organization={IEEE}
 }
-```
-
----
-
-## 📧 Questions?
-
-For dataset inquiries, contact:  
-**Nahla Nabil Skaik**  
+📧 Contact
+For dataset questions:
+Nahla Nabil Skaik
 📧 nahla.nabil.52@gmail.com
-
----
-
-## 🔗 Related Resources
-
-- **CWRU Bearing Data Center**: https://engineering.case.edu/bearingdatacenter
-- **Paper Repository**: https://github.com/Nahla-Nabil/Federated-PdM-IIoT
-- **Full Code**: `federated_pdm_complete.py`
