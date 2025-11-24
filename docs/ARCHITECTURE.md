@@ -10,7 +10,7 @@
 
 ![System Architecture](results/figures/architecture_diagram)
 
----
+
 
 ## 🔄 Workflow Pipeline
 
