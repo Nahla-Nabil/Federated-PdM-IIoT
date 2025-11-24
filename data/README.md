@@ -21,9 +21,6 @@ The experiments in the paper used **the real Kaggle dataset**, not the synthetic
 
 ---
 
-
----
-
 ## 🎯 Dataset Specifications
 
 | Property | Value |
