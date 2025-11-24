@@ -7,37 +7,8 @@
 ## 📐 High-Level Overview
 
 ```
-┌───────────────────────────────────────────────────────────────┐
-│                    CLOUD SERVER                               │
-│  ┌─────────────────────────────────────────────────────┐     │
-│  │         Global Model Aggregation                    │     │
-│  │         (FedAvg Algorithm)                          │     │
-│  │                                                      │     │
-│  │   w_global = Σ (n_k/N) × w_k                        │     │
-│  │                                                      │     │
-│  │   • Receives model parameters from edges            │     │
-│  │   • Applies weighted averaging                      │     │
-│  │   • Broadcasts updated global model                 │     │
-│  └─────────────────────────────────────────────────────┘     │
-└────────┬──────────────┬──────────────┬──────────────┬─────────┘
-         │              │              │              │
-    ┌────▼────┐    ┌────▼────┐   ┌────▼────┐    ┌────▼────┐
-    │ Edge 1  │    │ Edge 2  │   │ Edge 3  │    │ Edge 4  │
-    │         │    │         │   │         │    │         │
-    │ RF (80) │    │ RF (80) │   │ RF (80) │    │ RF (80) │
-    │ Depth10 │    │ Depth10 │   │ Depth10 │    │ Depth10 │
-    │         │    │         │   │         │    │         │
-    │ Data:   │    │ Data:   │   │ Data:   │    │ Data:   │
-    │ 431     │    │ 431     │   │ 431     │    │ 431     │
-    │ samples │    │ samples │   │ samples │    │ samples │
-    └─────────┘    └─────────┘   └─────────┘    └─────────┘
-         ▲              ▲              ▲              ▲
-         │              │              │              │
-    ┌────┴────┐    ┌────┴────┐   ┌────┴────┐    ┌────┴────┐
-    │Sensor 1 │    │Sensor 2 │   │Sensor 3 │    │Sensor 4 │
-    │Vibration│    │Vibration│   │Vibration│    │Vibration│
-    └─────────┘    └─────────┘   └─────────┘    └─────────┘
-```
+
+![System Architecture](results/figures/architecture_diagram.png)
 
 ---
 
