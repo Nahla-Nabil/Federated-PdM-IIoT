@@ -174,7 +174,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Nahla Nabil Skaik**  
 Arab Open University - Bahrain  
 Email: nahla.nabil.52@gmail.com  
-GitHub: [@Nahla-Nabil](https://github.com/NahLA-Nabil)  
+GitHub: [@Nahla-Nabil](https://github.com/NahlA-Nabil)  
 Linkedin: https://www.linkedin.com/in/nahla-nabil-876597211/
 
 ## Acknowledgments
