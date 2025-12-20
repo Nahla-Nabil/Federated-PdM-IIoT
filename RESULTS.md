@@ -128,7 +128,7 @@ Results:
 
 ### Top 10 Feature Importance (by mean |SHAP|)
 
-| **Rank** | **Feature** | **Mean** |**SHAP**| | **Interpretation** |
+| **Rank** | **Feature** | **Mean** |**SHAP**| **Interpretation** |
 |------|---------|-------------|----------------|
 | 1 | **RMS** | 0.187 | Primary vibration energy indicator |
 | 2 | **Std** | 0.152 | Captures variation from impacts |
