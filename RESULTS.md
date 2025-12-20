@@ -123,23 +123,24 @@ Results:
 - Decision Tree & SVM statistically inferior
 
 ---
-
 ## 🔍 5. SHAP Explainability Analysis
 
 ### Top 10 Feature Importance (by mean |SHAP|)
 
-| **Rank** | **Feature** | **Mean** |**SHAP**| **Interpretation** |
-|------|---------|-------------|----------------|
-| 1 | **RMS** | 0.187 | Primary vibration energy indicator |
-| 2 | **Std** | 0.152 | Captures variation from impacts |
-| 3 | **Mean** | 0.134 | Global signal level shifts |
-| 4 | **Kurtosis** | 0.129 | Early-stage fault detector |
-| 5 | **Crest Factor** | 0.098 | Impulsive fault sensitivity |
-| 6 | **Max** | 0.081 | Peak amplitude events |
-| 7 | **Form Factor** | 0.067 | Waveform shape changes |
-| 8 | **Peak-to-Peak** | 0.054 | Signal range |
-| 9 | **Skewness** | 0.039 | Distribution asymmetry |
-| 10 | **Min** | 0.032 | Minimum amplitude |
+| Rank | Feature | Mean \|SHAP\| | Interpretation |
+|------|---------|---------------|----------------|
+| 1 | RMS | 0.187 | Primary vibration energy indicator |
+| 2 | Std | 0.152 | Captures variation from impacts |
+| 3 | Mean | 0.134 | Global signal level shifts |
+| 4 | Kurtosis | 0.129 | Early-stage fault detector |
+| 5 | Crest Factor | 0.098 | Impulsive fault sensitivity |
+| 6 | Max | 0.081 | Peak amplitude events |
+| 7 | Form Factor | 0.067 | Waveform shape changes |
+| 8 | Peak-to-Peak | 0.054 | Signal range |
+| 9 | Skewness | 0.039 | Distribution asymmetry |
+| 10 | Min | 0.032 | Minimum amplitude |
+
+| 10 | Min | 0.032 | Minimum amplitude |
 
 ### 🎯 Key Insights
 
