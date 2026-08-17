@@ -31,7 +31,7 @@ This repository contains the complete implementation of a **privacy-preserving f
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/NahlaSkaik/Federated-PdM-IIoT.git
+git clone https://github.com/Nahla-Nabil/Federated-PdM-IIoT.git
 cd Federated-PdM-IIoT
 ```
 
@@ -171,7 +171,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Nahla Nabil Skaik**  
 Arab Open University - Bahrain  
 Email: nahla.nabil.52@gmail.com  
-GitHub: [@Nahla-Nabil](https://github.com/NahlA-Nabil)  
+GitHub: [@Nahla-Nabil](https://github.com/Nahla-Nabil)  
 Linkedin: https://www.linkedin.com/in/nahla-nabil-876597211/
 
 ## Acknowledgments
