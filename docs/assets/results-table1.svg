@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+<title id="t">Reported results, Table I</title>
+<desc id="d">Centralized vs reported federated: accuracy 0.9496 vs 0.9513, precision 0.9522 vs 0.9539, recall 0.9496 vs 0.9513, F1 0.9496 vs 0.9513, AUC-ROC 0.9957 vs 0.9945.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#060E22"/><stop offset="0.55" stop-color="#0B1733"/><stop offset="1" stop-color="#0E2250"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#22D3EE" stop-opacity="0.28"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowb" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#5B7CFA" stop-opacity="0.30"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+  </pattern>
+  <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#22D3EE"/></marker>
+  <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#7186AE"/></marker>
+  <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#F5B342"/></marker>
+  <marker id="abig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#FF7A7A"/></marker>
+</defs>
+<rect x="0" y="0" width="1200" height="520" rx="24" fill="url(#bg)"/>
+<rect x="0" y="0" width="1200" height="520" rx="24" fill="url(#grid)"/>
+<text x="48" y="62" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#EAF2FF" text-anchor="start">Reported results: centralized vs federated</text>
+<text x="48" y="94" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="400" fill="#A9B8D6" text-anchor="start">Paper Table I · single stratified train/test split (575 test samples)</text>
+<circle cx="57" cy="128" r="8" fill="#5B7CFA"/><text x="72" y="133" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#A9B8D6" text-anchor="start">Centralized RF (150 trees, depth 12)</text>
+<circle cx="387" cy="128" r="8" fill="#13A6C2" stroke="#EAF2FF" stroke-width="1.5"/><text x="402" y="133" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#A9B8D6" text-anchor="start">Federated (as reported)</text>
+<line x1="260.0" y1="160" x2="260.0" y2="440" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="260.0" y="464" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">0.94</text>
+<line x1="400.0" y1="160" x2="400.0" y2="440" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="400.0" y="464" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">0.95</text>
+<line x1="540.0" y1="160" x2="540.0" y2="440" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="540.0" y="464" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">0.96</text>
+<line x1="680.0" y1="160" x2="680.0" y2="440" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="680.0" y="464" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">0.97</text>
+<line x1="820.0" y1="160" x2="820.0" y2="440" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="820.0" y="464" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">0.98</text>
+<line x1="960.0" y1="160" x2="960.0" y2="440" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="960.0" y="464" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">0.99</text>
+<line x1="1100.0" y1="160" x2="1100.0" y2="440" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="1100.0" y="464" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">1.00</text>
+<text x="236" y="192" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#EAF2FF" text-anchor="end">Accuracy</text>
+<line x1="394.40000000000066" y1="186" x2="418.20000000000107" y2="186" stroke="#25407A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="394.40000000000066" cy="186" r="9" fill="#5B7CFA"/>
+<circle cx="418.20000000000107" cy="186" r="9" fill="#13A6C2" stroke="#EAF2FF" stroke-width="1.5"/>
+<text x="436.20000000000107" y="192" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#EAF2FF" text-anchor="start">0.9496 / 0.9513</text>
+<text x="236" y="248" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#EAF2FF" text-anchor="end">Precision</text>
+<line x1="430.8000000000012" y1="242" x2="454.60000000000014" y2="242" stroke="#25407A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="430.8000000000012" cy="242" r="9" fill="#5B7CFA"/>
+<circle cx="454.60000000000014" cy="242" r="9" fill="#13A6C2" stroke="#EAF2FF" stroke-width="1.5"/>
+<text x="472.60000000000014" y="248" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#EAF2FF" text-anchor="start">0.9522 / 0.9539</text>
+<text x="236" y="304" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#EAF2FF" text-anchor="end">Recall</text>
+<line x1="394.40000000000066" y1="298" x2="418.20000000000107" y2="298" stroke="#25407A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="394.40000000000066" cy="298" r="9" fill="#5B7CFA"/>
+<circle cx="418.20000000000107" cy="298" r="9" fill="#13A6C2" stroke="#EAF2FF" stroke-width="1.5"/>
+<text x="436.20000000000107" y="304" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#EAF2FF" text-anchor="start">0.9496 / 0.9513</text>
+<text x="236" y="360" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#EAF2FF" text-anchor="end">F1-score</text>
+<line x1="394.40000000000066" y1="354" x2="418.20000000000107" y2="354" stroke="#25407A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="394.40000000000066" cy="354" r="9" fill="#5B7CFA"/>
+<circle cx="418.20000000000107" cy="354" r="9" fill="#13A6C2" stroke="#EAF2FF" stroke-width="1.5"/>
+<text x="436.20000000000107" y="360" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#EAF2FF" text-anchor="start">0.9496 / 0.9513</text>
+<text x="236" y="416" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#EAF2FF" text-anchor="end">AUC-ROC</text>
+<line x1="1023.0000000000008" y1="410" x2="1039.8000000000004" y2="410" stroke="#25407A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="1039.8000000000004" cy="410" r="9" fill="#5B7CFA"/>
+<circle cx="1023.0000000000008" cy="410" r="9" fill="#13A6C2" stroke="#EAF2FF" stroke-width="1.5"/>
+<text x="1057.8000000000004" y="416" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#EAF2FF" text-anchor="start">0.9957 / 0.9945</text>
+<text x="48" y="500" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="start">Axis starts at 0.94 to make the small differences visible. Source: published paper (IEEE Xplore 11430844); values match the saved notebook outputs.</text>
+</svg>

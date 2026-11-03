@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="t d">
+<title id="t">Experimental workflow</title>
+<desc id="d">Feature extraction by the dataset provider; then load features, encode and scale, stratified split, centralized baseline, Dirichlet edge clients, cloud step, evaluation and SHAP.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#060E22"/><stop offset="0.55" stop-color="#0B1733"/><stop offset="1" stop-color="#0E2250"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#22D3EE" stop-opacity="0.28"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowb" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#5B7CFA" stop-opacity="0.30"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+  </pattern>
+  <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#22D3EE"/></marker>
+  <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#7186AE"/></marker>
+  <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#F5B342"/></marker>
+  <marker id="abig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#FF7A7A"/></marker>
+</defs>
+<rect x="0" y="0" width="1200" height="470" rx="24" fill="url(#bg)"/>
+<rect x="0" y="0" width="1200" height="470" rx="24" fill="url(#grid)"/>
+<text x="48" y="62" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#EAF2FF" text-anchor="start">Experimental workflow</text>
+<text x="48" y="94" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="400" fill="#A9B8D6" text-anchor="start">Cell order in iiot-federated-pdm.ipynb. The dashed step happens upstream, in the public dataset.</text>
+<rect x="48" y="132" width="240" height="112" rx="16" fill="#0B1733" stroke="#25407A" stroke-width="1.4" stroke-dasharray="6 6"/>
+<circle cx="82" cy="170" r="17" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="82" y="176" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#22D3EE" text-anchor="middle">0</text>
+<text x="110" y="177" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="700" fill="#EAF2FF" text-anchor="start">Feature extraction</text>
+<text x="70" y="218" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#A9B8D6" text-anchor="start">by dataset provider</text>
+<line x1="294" y1="188.0" x2="328" y2="188.0" stroke="#22D3EE" stroke-width="2.4" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="336" y="132" width="240" height="112" rx="16" fill="#10204A" stroke="#25407A" stroke-width="1.4"/>
+<circle cx="370" cy="170" r="17" fill="#22D3EE" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="370" y="176" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#060E22" text-anchor="middle">1</text>
+<text x="398" y="177" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="700" fill="#EAF2FF" text-anchor="start">Load CWRU features</text>
+<text x="358" y="218" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#A9B8D6" text-anchor="start">2,300 × 9 · 10 classes</text>
+<line x1="582" y1="188.0" x2="616" y2="188.0" stroke="#22D3EE" stroke-width="2.4" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="624" y="132" width="240" height="112" rx="16" fill="#10204A" stroke="#25407A" stroke-width="1.4"/>
+<circle cx="658" cy="170" r="17" fill="#22D3EE" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="658" y="176" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#060E22" text-anchor="middle">2</text>
+<text x="686" y="177" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="700" fill="#EAF2FF" text-anchor="start">Encode &amp; scale</text>
+<text x="646" y="218" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#A9B8D6" text-anchor="start">labels 0–9 · z-score</text>
+<line x1="870" y1="188.0" x2="904" y2="188.0" stroke="#22D3EE" stroke-width="2.4" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="912" y="132" width="240" height="112" rx="16" fill="#10204A" stroke="#25407A" stroke-width="1.4"/>
+<circle cx="946" cy="170" r="17" fill="#22D3EE" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="946" y="176" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#060E22" text-anchor="middle">3</text>
+<text x="974" y="177" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="700" fill="#EAF2FF" text-anchor="start">Stratified split</text>
+<text x="934" y="218" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#A9B8D6" text-anchor="start">1,725 train · 575 test</text>
+<path d="M1032.0 250 V 310" stroke="#22D3EE" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ac)"/>
+<rect x="912" y="318" width="240" height="112" rx="16" fill="#10204A" stroke="#25407A" stroke-width="1.4"/>
+<circle cx="946" cy="356" r="17" fill="#22D3EE" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="946" y="362" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#060E22" text-anchor="middle">4</text>
+<text x="974" y="363" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="700" fill="#EAF2FF" text-anchor="start">Centralized baseline</text>
+<text x="934" y="404" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#A9B8D6" text-anchor="start">RF 150 trees · depth 12</text>
+<line x1="906" y1="374.0" x2="872" y2="374.0" stroke="#22D3EE" stroke-width="2.4" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="624" y="318" width="240" height="112" rx="16" fill="#10204A" stroke="#25407A" stroke-width="1.4"/>
+<circle cx="658" cy="356" r="17" fill="#22D3EE" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="658" y="362" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#060E22" text-anchor="middle">5</text>
+<text x="686" y="363" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="700" fill="#EAF2FF" text-anchor="start">Edge clients</text>
+<text x="646" y="404" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#A9B8D6" text-anchor="start">Dirichlet α = 0.5 · RF 80</text>
+<line x1="618" y1="374.0" x2="584" y2="374.0" stroke="#22D3EE" stroke-width="2.4" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="336" y="318" width="240" height="112" rx="16" fill="#10204A" stroke="#25407A" stroke-width="1.4"/>
+<circle cx="370" cy="356" r="17" fill="#22D3EE" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="370" y="362" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#060E22" text-anchor="middle">6</text>
+<text x="398" y="363" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="700" fill="#EAF2FF" text-anchor="start">Cloud aggregation</text>
+<text x="358" y="404" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#A9B8D6" text-anchor="start">global model</text>
+<line x1="330" y1="374.0" x2="296" y2="374.0" stroke="#22D3EE" stroke-width="2.4" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="48" y="318" width="240" height="112" rx="16" fill="#10204A" stroke="#25407A" stroke-width="1.4"/>
+<circle cx="82" cy="356" r="17" fill="#22D3EE" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="82" y="362" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#060E22" text-anchor="middle">7</text>
+<text x="110" y="363" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" font-weight="700" fill="#EAF2FF" text-anchor="start">Evaluate + explain</text>
+<text x="70" y="404" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#A9B8D6" text-anchor="start">metrics · ROC · SHAP</text>
+<text x="48" y="450" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#7186AE" text-anchor="start" font-style="italic">Further cells: algorithm comparison, scalability, statistical test, figures, saved models and CSV files.</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="t d">
+<title id="t">Algorithm benchmarking, Table II</title>
+<desc id="d">Random Forest 95.13% (0.55 s), Gradient Boosting 95.13% (7.49 s), Decision Tree 93.91% (0.01 s), SVM 92.00% (0.17 s).</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#060E22"/><stop offset="0.55" stop-color="#0B1733"/><stop offset="1" stop-color="#0E2250"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#22D3EE" stop-opacity="0.28"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowb" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#5B7CFA" stop-opacity="0.30"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+  </pattern>
+  <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#22D3EE"/></marker>
+  <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#7186AE"/></marker>
+  <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#F5B342"/></marker>
+  <marker id="abig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#FF7A7A"/></marker>
+</defs>
+<rect x="0" y="0" width="1200" height="480" rx="24" fill="url(#bg)"/>
+<rect x="0" y="0" width="1200" height="480" rx="24" fill="url(#grid)"/>
+<text x="48" y="62" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#EAF2FF" text-anchor="start">Algorithm benchmarking</text>
+<text x="48" y="94" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="400" fill="#A9B8D6" text-anchor="start">Paper Table II · test accuracy and training time on the same split</text>
+<line x1="260.0" y1="128" x2="260.0" y2="410" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+<text x="260.0" y="434" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">0%</text>
+<line x1="420.0" y1="128" x2="420.0" y2="410" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="420.0" y="434" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">25%</text>
+<line x1="580.0" y1="128" x2="580.0" y2="410" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="580.0" y="434" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">50%</text>
+<line x1="740.0" y1="128" x2="740.0" y2="410" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="740.0" y="434" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">75%</text>
+<line x1="900.0" y1="128" x2="900.0" y2="410" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.08"/>
+<text x="900.0" y="434" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="middle">100%</text>
+<text x="1060" y="140" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" letter-spacing="2">TRAINING TIME</text>
+<text x="240" y="188" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF2FF" text-anchor="end">Random Forest</text>
+<path d="M260 166 H864.832 a4 4 0 0 1 4 4 V200 a4 4 0 0 1 -4 4 H260 z" fill="#13A6C2"/>
+<text x="880.832" y="192" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="700" fill="#EAF2FF" text-anchor="start">95.13%</text>
+<text x="1060" y="192" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF2FF" text-anchor="middle">0.55 s</text>
+<text x="240" y="252" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF2FF" text-anchor="end">Gradient Boosting</text>
+<path d="M260 230 H864.832 a4 4 0 0 1 4 4 V264 a4 4 0 0 1 -4 4 H260 z" fill="#5B7CFA"/>
+<text x="880.832" y="256" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="700" fill="#EAF2FF" text-anchor="start">95.13%</text>
+<text x="1060" y="256" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF2FF" text-anchor="middle">7.49 s</text>
+<text x="240" y="316" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF2FF" text-anchor="end">Decision Tree</text>
+<path d="M260 294 H857.024 a4 4 0 0 1 4 4 V328 a4 4 0 0 1 -4 4 H260 z" fill="#56688F"/>
+<text x="873.024" y="320" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="700" fill="#EAF2FF" text-anchor="start">93.91%</text>
+<text x="1060" y="320" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF2FF" text-anchor="middle">0.01 s</text>
+<text x="240" y="380" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF2FF" text-anchor="end">SVM (RBF)</text>
+<path d="M260 358 H844.8000000000001 a4 4 0 0 1 4 4 V392 a4 4 0 0 1 -4 4 H260 z" fill="#56688F"/>
+<text x="860.8000000000001" y="384" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="700" fill="#EAF2FF" text-anchor="start">92.00%</text>
+<text x="1060" y="384" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF2FF" text-anchor="middle">0.17 s</text>
+<text x="48" y="466" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7186AE" text-anchor="start">Source: published paper (IEEE Xplore 11430844); values match the saved notebook outputs.</text>
+</svg>

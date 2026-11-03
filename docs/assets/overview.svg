@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="t d">
+<title id="t">Research at a glance</title>
+<desc id="d">Problem, approach, data, evaluation and next steps of the research.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#060E22"/><stop offset="0.55" stop-color="#0B1733"/><stop offset="1" stop-color="#0E2250"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#22D3EE" stop-opacity="0.28"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowb" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#5B7CFA" stop-opacity="0.30"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+  </pattern>
+  <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#22D3EE"/></marker>
+  <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#7186AE"/></marker>
+  <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#F5B342"/></marker>
+  <marker id="abig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#FF7A7A"/></marker>
+</defs>
+<rect x="0" y="0" width="1200" height="380" rx="24" fill="url(#bg)"/>
+<rect x="0" y="0" width="1200" height="380" rx="24" fill="url(#grid)"/>
+<text x="48" y="62" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#EAF2FF" text-anchor="start">Research at a glance</text>
+<rect x="48" y="96" width="206" height="248" rx="18" fill="#10204A" stroke="#25407A" stroke-width="1.2"/>
+<circle cx="92" cy="146" r="28" fill="#152A5C" stroke="#22D3EE" stroke-width="1.5"/>
+<path d="M92 132.0 l13.600000000000001 4.800000000000001 v8.0 c0 9.600000000000001 -6.4 16.0 -13.600000000000001 19.200000000000003 c-7.2 -3.2 -13.600000000000001 -9.600000000000001 -13.600000000000001 -19.200000000000003 v-8.0 z" stroke="#22D3EE" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="70" y="212" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#22D3EE" text-anchor="start">Problem</text>
+<text x="68" y="246" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">Centralized PdM pools</text>
+<text x="68" y="272" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">sensitive plant data;</text>
+<text x="68" y="298" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">sites differ (Non-IID)</text>
+<line x1="257" y1="220" x2="269" y2="220" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="272" y="96" width="206" height="248" rx="18" fill="#10204A" stroke="#25407A" stroke-width="1.2"/>
+<circle cx="316" cy="146" r="28" fill="#152A5C" stroke="#22D3EE" stroke-width="1.5"/>
+<polygon points="331.0,146.0 330.7,148.9 326.8,150.5 325.7,152.5 326.6,156.6 324.3,158.5 320.5,156.8 318.3,157.5 316.0,161.0 313.1,160.7 311.5,156.8 309.5,155.7 305.4,156.6 303.5,154.3 305.2,150.5 304.5,148.3 301.0,146.0 301.3,143.1 305.2,141.5 306.3,139.5 305.4,135.4 307.7,133.5 311.5,135.2 313.7,134.5 316.0,131.0 318.9,131.3 320.5,135.2 322.5,136.3 326.6,135.4 328.5,137.7 326.8,141.5 327.5,143.7" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linejoin="round"/><circle cx="316" cy="146" r="4.8" fill="none" stroke="#22D3EE" stroke-width="1.8"/>
+<text x="294" y="212" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#22D3EE" text-anchor="start">Approach</text>
+<text x="292" y="246" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">Edge Random Forests,</text>
+<text x="292" y="272" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">cloud aggregation,</text>
+<text x="292" y="298" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">SHAP explanations</text>
+<line x1="481" y1="220" x2="493" y2="220" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="496" y="96" width="206" height="248" rx="18" fill="#10204A" stroke="#25407A" stroke-width="1.2"/>
+<circle cx="540" cy="146" r="28" fill="#152A5C" stroke="#22D3EE" stroke-width="1.5"/>
+<rect x="524.6" y="144.79999999999998" width="5.6" height="8.399999999999999" rx="2" fill="#22D3EE"/><rect x="533.0" y="137.79999999999998" width="5.6" height="15.399999999999999" rx="2" fill="#22D3EE"/><rect x="541.4000000000001" y="142.0" width="5.6" height="11.2" rx="2" fill="#22D3EE"/><rect x="549.8000000000001" y="132.2" width="5.6" height="21.0" rx="2" fill="#22D3EE"/>
+<text x="518" y="212" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#22D3EE" text-anchor="start">Data</text>
+<text x="516" y="246" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">CWRU bearings: 2,300</text>
+<text x="516" y="272" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">feature windows,</text>
+<text x="516" y="298" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">10 fault classes</text>
+<line x1="705" y1="220" x2="717" y2="220" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="720" y="96" width="206" height="248" rx="18" fill="#10204A" stroke="#25407A" stroke-width="1.2"/>
+<circle cx="764" cy="146" r="28" fill="#152A5C" stroke="#22D3EE" stroke-width="1.5"/>
+<circle cx="762.8" cy="144.8" r="10.4" fill="none" stroke="#22D3EE" stroke-width="2.4"/><line x1="770.0" y1="152.0" x2="778.8" y2="160.8" stroke="#22D3EE" stroke-width="3" stroke-linecap="round"/>
+<text x="742" y="212" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#22D3EE" text-anchor="start">Evaluation</text>
+<text x="740" y="246" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">Non-IID clients, four</text>
+<text x="740" y="272" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">algorithms, 2–16</text>
+<text x="740" y="298" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">clients, SHAP</text>
+<line x1="929" y1="220" x2="941" y2="220" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" marker-end="url(#ac)"/>
+<rect x="944" y="96" width="206" height="248" rx="18" fill="#10204A" stroke="#25407A" stroke-width="1.2"/>
+<circle cx="988" cy="146" r="28" fill="#152A5C" stroke="#22D3EE" stroke-width="1.5"/>
+<rect x="977" y="135" width="22" height="22" rx="6" fill="#152A5C" stroke="#22D3EE" stroke-width="2.2"/><rect x="982.5" y="140.5" width="11" height="11" rx="3" fill="none" stroke="#22D3EE" stroke-width="1.6"/><line x1="982.5" y1="135" x2="982.5" y2="131.15" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="982.5" y1="157" x2="982.5" y2="160.85" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="977" y1="140.5" x2="973.15" y2="140.5" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="999" y1="140.5" x2="1002.85" y2="140.5" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="988" y1="135" x2="988" y2="131.15" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="988" y1="157" x2="988" y2="160.85" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="977" y1="146" x2="973.15" y2="146" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="999" y1="146" x2="1002.85" y2="146" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="993.5" y1="135" x2="993.5" y2="131.15" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="993.5" y1="157" x2="993.5" y2="160.85" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="977" y1="151.5" x2="973.15" y2="151.5" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/><line x1="999" y1="151.5" x2="1002.85" y2="151.5" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round"/>
+<text x="966" y="212" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#22D3EE" text-anchor="start">Next</text>
+<text x="964" y="246" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">Multi-site data, edge</text>
+<text x="964" y="272" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">hardware, FedProx,</text>
+<text x="964" y="298" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#EAF2FF" text-anchor="start">privacy analysis</text>
+</svg>

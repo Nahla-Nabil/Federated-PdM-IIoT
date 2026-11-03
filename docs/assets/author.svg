@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="t d">
+<title id="t">Project developer: Nahla Nabil Skaik</title>
+<desc id="d">Nahla Nabil Skaik, first author, principal researcher and project developer, Arab Open University – Bahrain.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#060E22"/><stop offset="0.55" stop-color="#0B1733"/><stop offset="1" stop-color="#0E2250"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#22D3EE" stop-opacity="0.28"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowb" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#5B7CFA" stop-opacity="0.30"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+  </pattern>
+  <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#22D3EE"/></marker>
+  <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#7186AE"/></marker>
+  <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#F5B342"/></marker>
+  <marker id="abig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#5B7CFA"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#FF7A7A"/></marker>
+</defs>
+<rect x="0" y="0" width="1200" height="240" rx="24" fill="url(#bg)"/>
+<rect x="0" y="0" width="1200" height="240" rx="24" fill="url(#grid)"/>
+<rect x="32" y="24" width="1136" height="192" rx="20" fill="#10204A" stroke="#25407A" stroke-width="1.2"/>
+<circle cx="134" cy="120" r="64" fill="#152A5C" stroke="#22D3EE" stroke-width="2"/>
+<text x="134" y="138" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="700" fill="#22D3EE" text-anchor="middle">NS</text>
+<text x="232" y="92" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#EAF2FF" text-anchor="start">Nahla Nabil Skaik</text>
+<text x="232" y="128" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="600" fill="#22D3EE" text-anchor="start">First Author  ·  Principal Project Developer</text>
+<text x="232" y="160" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="400" fill="#A9B8D6" text-anchor="start">AI Researcher  ·  Arab Open University – Bahrain</text>
+<text x="232" y="190" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#7186AE" text-anchor="start">Implemented the framework, ran the experiments and maintains this repository.</text>
+</svg>
